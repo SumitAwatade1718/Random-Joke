@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Joke</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: rgb(240, 240, 240);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      h1 {
+        color: rgb(40, 40, 40);
+      }
+
+      div {
+        background: rgb(255, 255, 255);
+        padding: 15px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgb(180, 180, 180);
+        width: 300px;
+        display: none;
+      }
+
+      button {
+        padding: 8px 12px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        background: rgb(80, 140, 255);
+        color: white;
+        cursor: pointer;
+        height: 30px;
+        width: 250px;
+      }
+
+      button:hover {
+        background: rgb(60, 110, 230);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>😂 Random Programming Joke 😂</h1>
+
+    <div id="promise">
+      <p id="setup">Setup:</p>
+      <p id="punchline">Punchline:</p>
+    </div>
+
+    <div id="async">
+      <p id="setup1">Setup:</p>
+      <p id="punchline1">Punchline:</p>
+    </div>
+
+    <button onclick="getJoke()">Get Joke (Promise)</button>
+    <button onclick="getJoke2()">Get Joke (Async/Await)</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
